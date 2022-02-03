@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/4VHqp6Ewq/hfbgF8hPu8XknKF+ongtS/W1aYzAJEUeUSKHxS2LGGK2LiDSf7YLKoSAbxR46fvuawk+IsLe9RQ==",
+  "success": true,
+  "projectFilePath": "D:\\Angular_02_2022\\DataLayer\\DataLayer.WebApi\\DataLayer.WebApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Patrick\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
