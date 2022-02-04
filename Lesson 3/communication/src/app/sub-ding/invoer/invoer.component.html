@@ -1,3 +1,3 @@
-<h1>Invoer: {{data}}</h1>
-
-<input type="text" [(ngModel)]="data" />
+<h1>Invoer: {{svc.text$ | async}}</h1>
+<h1>{{nummer}}</h1>
+<input type="text" [(ngModel)]="data" (input)="oninput()" />

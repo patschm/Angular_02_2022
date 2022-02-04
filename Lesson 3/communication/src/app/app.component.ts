@@ -3,9 +3,12 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-    <app-invoer></app-invoer>
+  <router-outlet></router-outlet>
+    <!-- <app-productgroup-list></app-productgroup-list> -->
+    <!-- <app-product-list></app-product-list> -->
+    <!-- <app-invoer></app-invoer>
     <hr/>
-    <app-invoer></app-invoer>
+    <app-invoer></app-invoer> -->
   `,
   styles: []
 })
