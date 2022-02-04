@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Review } from 'src/app/entities/entities';
 
 @Component({
@@ -27,6 +27,14 @@ export class ReviewDetailComponent implements OnInit {
     });
   }
 
+  public get review() : any
+  {
+    return {
+      author: this.group.get("author"),
+      score : this.group.get("score")
+    };
+  }
+  
   ngOnInit(): void {
   }
 

@@ -1,14 +1,14 @@
 <form (ngSubmit)="submit()" [formGroup]="group" >
     <input type="text" formControlName="author" />
-    <span *ngIf="!(group.controls['author'].pristine || group.controls['author'].valid)">De naam is verplicht</span>
+    <span *ngIf="!(review.author?.pristine || review.author?.valid)">De naam is verplicht</span>
     <br/>
-    <input type="text" formControlName="text" />
+    <input [type]="'text'" formControlName="text" />
     <span *ngIf="!(group.controls['text'].pristine || group.controls['text'].valid)">een review is verplicht</span>
     <br/>
     <input type="number" formControlName="score" />
-    <span *ngIf="group.controls['score'].invalid">
-        <span *ngIf="this.group.controls['score'].hasError('min')">Score moet groter of gelijk zijn dan 0</span>
-        <span *ngIf="this.group.controls['score'].hasError('max')">Score kleiner of gelijk aan 5</span>
+    <span *ngIf="review.score?.invalid">
+        <span *ngIf="review.score?.hasError('min')">Score moet groter of gelijk zijn dan 0</span>
+        <span *ngIf="review.score?.hasError('max')">Score kleiner of gelijk aan 5</span>
     </span>
     <br/>
     <button type="submit" [disabled]="this.group.invalid">Save</button>
